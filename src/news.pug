@@ -1,0 +1,69 @@
+include components/_Card.pug
+
+doctype html
+html(lang="en")
+  head
+    include layouts/_Settings.pug
+    -
+      path = 'news.html';
+      pageTitle = '最新消息';
+      infoTitle = '最新消息後面的資訊標題';
+      description = '最新消息的網頁描述';
+    include layouts/_Head.pug
+  body
+    include layouts/_Header.pug
+ 
+    section.l-news
+      .container
+        .row.--gap
+          -
+            const newsList = [
+              {
+                date: '2024.10.09',
+                title: '清爽上市TOP 1！',
+                content: '苦瓜檸檬清爽消暑! 苦瓜爆檸茶: 苦瓜去火，檸檬消暑，必喝!',
+                img: 'img/news/bitter-lemon.jpg',
+                link: 'news.html'
+              },
+              {
+                date: '2024.10.10',
+                title: '耶誕歡樂禮物',
+                content: 'MERRY CHRISTMAS 耶誕樹、聖誕麋路造型餅乾(奶蛋素)',
+                img: 'img/news/merrygift.jpg',
+                link: 'news.html'
+              },
+              {
+                date: '2024.11.07',
+                title: '冬季限定',
+                content: '黑糖暖心黑糖系列: 黑糖薑茶、黑糖薑汁奶茶、黑糖桂圓紅棗茶、黑糖桂圓紅棗奶茶!',
+                img: 'img/news/winteronly.jpg',
+                link: 'news.html'
+              },
+              {
+                date: '2024.11.21',
+                title: '耶誕嘉年華',
+                content: '11/21-12/25 主題切片蛋糕，第二件八折 (價低者折/限門市現場購買)',
+                img: 'img/news/merrychristmas.jpg',
+                link: 'news.html'
+              },
+              {
+                date: '2024.12.07',
+                title: '芝士波羅蜜',
+                content: '軟綿的土司，香濃的芝士鳳梨餡，披上甜蜜的椰香皮，香甜又美味!',
+                img: 'img/news/cheesebread.jpg',
+                link: 'news.html'
+              },
+              {
+                date: '2024.12.07',
+                title: '蕎麥覺醒',
+                content: '無咖啡因蕎麥飲品，熱量不到400，夜晚飲用也能享受飲品、無負擔!',
+                img: 'img/news/nocoffeein.jpg',
+                link: 'news.html'
+              }
+            ];
+          each item in newsList
+            .col-md-3
+              +Card(item)
+
+    include layouts/_Footer.pug
+    include layouts/_Scripts.pug

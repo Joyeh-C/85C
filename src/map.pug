@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    include layouts/_Settings.pug
+    -
+      path = 'map.html';
+      pageTitle = '加盟專區';
+      infoTitle = '加盟專區後面的資訊標題';
+      description = '加盟專區的網頁描述';
+    include layouts/_Head.pug
+  body
+    include layouts/_Header.pug
+ 
+    main.l-main
+      section.l-card 
+        .container 
+          img.u-object-fit(src="http://www.85cafe.com/file/original/images/%E5%8A%A0%E7%9B%9F%E6%B5%81%E7%A8%8B%E5%A4%A7%E6%94%B9%E7%89%88-1-0.jpg", alt="加盟專區")
+
+    include layouts/_Footer.pug
+    include layouts/_Scripts.pug

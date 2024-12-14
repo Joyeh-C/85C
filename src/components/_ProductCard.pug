@@ -1,0 +1,15 @@
+mixin ProductCard(options)
+  -
+    // Object.assign(預設物件, 傳進來的物件) 
+    // 用來合併預設物件值及傳進來的 options 值
+    const props = Object.assign({
+      title: '內容要多一點',
+      desc: '內容要多一點',
+      img: '',
+      link: '##'
+    }, options);
+
+  article.c-product-card
+    .c-product-card__img-mask
+    .c-product-card__content #{props.title}
+

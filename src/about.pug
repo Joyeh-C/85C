@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+  head
+    include layouts/_Settings.pug
+    -
+      path = 'about.html';
+      pageTitle = '關於我們';
+      infoTitle = '關於我們後面的資訊標題';
+      description = '關於我們的網頁描述';
+    include layouts/_Head.pug
+  body
+    include layouts/_Header.pug
+    section
+      .container
+        h2.o-section-title.u-mb-80 ABOUT US
+          span.o-section-title__subtitle 關於我們
+      .container
+          .row
+            .col-md-6.order-md-0.order-2
+              img.u-object-fit(src="img/about/why.jpg", alt="為何選擇85")
+            .col-md-6.order-md-0.order-1
+              .l-about__content-wrap
+                .l-about.u-mb-64(data-aos="fade-up")
+                  h3.u-text-2xl.u-mb-16 Why 85°C? 為什麼選擇85°C?
+                  p.u-fw-500 85℃創辦人吳政學，因幼時經常舉家遷徙，獨具洞察生活的敏銳思考，搶先掌握趨勢商機。 2003年初吳政學先生率高階主管共享五星級飯店下午茶，席間皆認同餐點實屬美饌，但價格不斐，頓時萌生「五星級饗宴、平價化體驗」意念，致力打造五星級團隊，多次親訪五星名廚；延攬專業研發團隊，遠赴瓜地馬拉咖啡莊園，嚴選阿拉比卡頂級咖啡豆，逐步開展跨國企業版圖。
+                .l-about__content(data-aos="fade-up")
+                  h3.u-text-2xl.u-mb-16 全世界的85℃ 全球化擴點經營
+                  p.u-fw-500 85℃以咖啡蛋糕與烘培經典組合，深耕全台都會商圈與鄉間小鎮。 堅持物超所值的初衷，分享精緻蛋糕與美味烘培，搭配健康時尚飲品。全球專業烘焙師傅已超過3500位，致力品質提升與產品多樣性，以Think Globally, Act Locally 的用心，從台灣跨越大陸、美國、香港與柬埔寨等地區，躍升國際化品牌新貌，與世人分享85°C幸福時尚。
+                .u-mt-64
+
+    include layouts/_Footer.pug
+    include layouts/_Scripts.pug

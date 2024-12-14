@@ -1,0 +1,295 @@
+include components/_ArtistCard.pug
+include components/_Card.pug
+
+doctype html
+html(lang="en")
+  head
+    include layouts/_Settings.pug
+    include layouts/_Head.pug
+  body
+    include layouts/_Header.pug
+
+    main.l-main
+      section.u-p-0.l-hero(data-aos="fade" data-aos-offset="0")
+        //- 引入插件基本步驟
+        //- 引入 CSS、引入 JS、寫插件要求的 HTML 結構、用 JS 初始化插件
+        .swiper.l-hero__swiper
+          .swiper-wrapper
+            .swiper-slide.l-hero__slide
+             .l-hero__img-mask 
+                img.u-object-fit(src="img/banner/buy-one-get-one-free.jpg", alt="買一送一活動")
+            .swiper-slide.l-hero__slide
+             .l-hero__img-mask 
+                img.u-object-fit(src="img/banner/friday-coffee.jpg", alt="星期五咖啡日")
+            .swiper-slide.l-hero__slide
+             .l-hero__img-mask 
+                img.u-object-fit(src="img/banner/international-coffee.jpg", alt="咖啡界奧斯卡")
+            .swiper-slide.l-hero__slide
+             .l-hero__img-mask 
+                img.u-object-fit(src="img/banner/no-coffin.jpg", alt="蕎麥覺醒")
+            .swiper-slide.l-hero__slide
+             .l-hero__img-mask 
+                img.u-object-fit(src="img/banner/wednesday-coffee.jpg", alt="週三黑糖珍珠奶茶日")
+    
+      section.--gradient.l-lineup
+        .container
+          //- h2.u-ff-en.u-text-4xl.u-fw-900.u-color-secondary 商品專區
+          h2.o-section-title.u-mb-24(data-aos="fade-up") 商品專區
+            span.o-section-title__subtitle MANY KINDS OF PRODUCTS
+          //- h2.u-text-4xl.l-lineup__title LINEUP，
+          //-   span.u-inline.u-color-secondary MEGAPORT FESTIVAL
+          //-   | dsafdhsfdgh
+          .row.--gap
+            .col-md-6.l-lineup__wrap
+              //- article.c-artist-card
+              //-   a.c-artist-card__link(href="##")
+              //-     h3.u-text-xl.u-fw-900 麵包 Breads
+              //-     .u-img-ratio.c-artist-card__img-mask
+              //-       img.u-object-fit.--abs(src="img/lineup/breads-nobg.png", alt="麵包 Breads 去背照")
+              //-       img.u-object-fit.--abs(src="img/lineup/breads.jpg", alt="麵包 Breads 形象照")
+              +ArtistCard({
+                name: '麵包 Breads',
+                img: 'img/lineup/breads.jpg',
+                hoverImg: 'img/lineup/breads-nobg.png',
+                link: 'products.html'
+              })
+
+            .col-md-6.l-lineup__wrap
+              //- article.c-artist-card
+              //-   a.c-artist-card__link(href="##")
+              //-     h3.u-text-xl.u-fw-900 蛋糕 Cakes
+              //-     .u-img-ratio.c-artist-card__img-mask
+              //-       img.u-object-fit.--abs(src="img/lineup/cakes-nobg.png", alt="蛋糕 Cakes 去背照")
+              //-       img.u-object-fit.--abs(src="img/lineup/cakes.jpg", alt="蛋糕 Cakes 形象照")
+              +ArtistCard({
+                  name: '蛋糕 Cakes',
+                  img: 'img/lineup/cakes.jpg',
+                  hoverImg: 'img/lineup/cakes-nobg.png',
+                  link: 'products.html'
+                })
+
+            .col-md-4.l-lineup__wrap
+              //- article.c-artist-card
+              //-   a.c-artist-card__link(href="##")
+              //-     h3.u-text-xl.u-fw-900 飲品 Drinks
+              //-     .u-img-ratio.c-artist-card__img-mask
+              //-       img.u-object-fit.--abs(src="img/lineup/drinks-nobg.png", alt="飲品 Drinks 去背照")
+              //-       img.u-object-fit.--abs(src="img/lineup/drinks.jpg", alt="飲品 Drinks 形象照")
+              +ArtistCard({
+                  name: '飲品 Drinks',
+                  img: 'img/lineup/drinks.jpg',
+                  hoverImg: 'img/lineup/drinks-nobg.png',
+                  link: 'products.html'
+                })
+
+            .col-md-4.l-lineup__wrap
+              //- article.c-artist-card
+              //-   a.c-artist-card__link(href="##")
+              //-     h3.u-text-xl.u-fw-900 禮品專區 Souvenirs
+              //-     .u-img-ratio.c-artist-card__img-mask
+              //-       img.u-object-fit.--abs(src="img/lineup/souvenirs-nobg.png", alt="禮品專區 Souvenirs 去背照")
+              //-       img.u-object-fit.--abs(src="img/lineup/souvenirs.jpg", alt="禮品專區 Souvenirs 形象照")
+              +ArtistCard({
+                  name: '禮品專區 Souvenirs',
+                  img: 'img/lineup/souvenirs.jpg',
+                  hoverImg: 'img/lineup/souvenirs-nobg.png',
+                  link: 'products.html'
+                })
+
+            .col-md-4.l-lineup__wrap
+              //- article.c-artist-card
+              //-   a.c-artist-card__link(href="##")
+              //-     h3.u-text-xl.u-fw-900 精選食材 Selected ingredients
+              //-     .u-img-ratio.c-artist-card__img-mask
+              //-       img.u-object-fit.--abs(src="img/lineup/ingredients-nobg.png", alt="精選食材 Selected ingredients 去背照")
+              //-       img.u-object-fit.--abs(src="img/lineup/ingredients.jpg", alt="精選食材 Selected ingredients 形象照")
+              +ArtistCard({
+                  name: '精選食材 Selected ingredients',
+                  img: 'img/lineup/ingredients.jpg',
+                  hoverImg: 'img/lineup/ingredients-nobg.png',
+                  link: 'products.html'
+                })
+
+      section.u-px-0.l-lineup-2
+        .u-section-px
+          .container
+            h2.o-section-title.u-mb-40(data-aos="fade-up") 全台門市據點
+              span.o-section-title__subtitle STORES IN TAIWAN
+        .container-fluid.u-px-0
+          .row.--no-gap
+            .col-sm-6
+              article.c-artist-card-2(data-aos="fade-up")
+                a.c-artist-card-2__link(href="##")
+                  h3.u-text-xl.u-fw-900.c-artist-card-2__title 北部地區 North Stores
+                  .u-img-ratio.c-artist-card-2__img-mask
+                    img.u-object-fit.--abs(src="img/lineup/store01.jpg", alt="台灣 TAIWAN 形象照")
+            .col-sm-6
+              article.c-artist-card-2(data-aos="fade-up")
+                a.c-artist-card-2__link(href="##")
+                  h3.u-text-xl.u-fw-900.c-artist-card-2__title 中部地區 Central Stores
+                  .u-img-ratio.c-artist-card-2__img-mask
+                    img.u-object-fit.--abs(src="img/lineup/store02.jpg", alt="香港 HONG KONG 形象照")
+            .col-xl-4.col-sm-6
+              article.c-artist-card-2(data-aos="fade-up")
+                a.c-artist-card-2__link(href="##")
+                  h3.u-text-xl.u-fw-900.c-artist-card-2__title 南部地區 South Stores
+                  .u-img-ratio.c-artist-card-2__img-mask
+                    img.u-object-fit.--abs(src="img/lineup/store03.jpg", alt="大陸 CHINA 形象照")
+            .col-xl-4.col-sm-6
+              article.c-artist-card-2(data-aos="fade-up")
+                a.c-artist-card-2__link(href="##")
+                  h3.u-text-xl.u-fw-900.c-artist-card-2__title 東部地區 East Stores
+                  .u-img-ratio.c-artist-card-2__img-mask
+                    img.u-object-fit.--abs(src="img/lineup/store04.jpg", alt="澳洲 AUSTRALIA 形象照")
+            .col-xl-4.col-sm-6
+              article.c-artist-card-2(data-aos="fade-up")
+                a.c-artist-card-2__link(href="##")
+                  h3.u-text-xl.u-fw-900.c-artist-card-2__title 離島地區 Outlying Islands Stores
+                  .u-img-ratio.c-artist-card-2__img-mask
+                    img.u-object-fit.--abs(src="img/lineup/store05.jpg", alt="美國 THE U.S.A. 形象照")
+
+      section.l-news#news
+        button.l-news__swiper-btn.--prev 
+          iconify-icon.u-icon(icon="fa-solid:arrow-left")
+        button.l-news__swiper-btn.--next 
+          iconify-icon.u-icon(icon="fa-solid:arrow-right")
+        .container
+          h2.o-section-title.--align-center.u-mb-40(data-aos="fade-up") 最新活動
+            span.o-section-title__subtitle NEWS
+
+          .swiper.l-news__swiper(data-aos="fade-up")
+            .swiper-wrapper
+              -
+                const newsList = [
+                  {
+                    date: '2024.10.09',
+                    title: '清爽上市TOP 1！',
+                    content: '苦瓜檸檬清爽消暑! 苦瓜爆檸茶: 苦瓜去火，檸檬消暑，必喝!',
+                    img: 'img/news/bitter-lemon.jpg',
+                    link: 'news.html'
+                  },
+                  {
+                    date: '2024.10.10',
+                    title: '耶誕歡樂禮物',
+                    content: 'MERRY CHRISTMAS 耶誕樹、聖誕麋路造型餅乾(奶蛋素)',
+                    img: 'img/news/merrygift.jpg',
+                    link: 'news.html'
+                  },
+                  {
+                    date: '2024.11.07',
+                    title: '冬季限定',
+                    content: '黑糖暖心黑糖系列: 黑糖薑茶、黑糖薑汁奶茶、黑糖桂圓紅棗茶、黑糖桂圓紅棗奶茶!',
+                    img: 'img/news/winteronly.jpg',
+                    link: 'news.html'
+                  },
+                  {
+                    date: '2024.11.21',
+                    title: '耶誕嘉年華',
+                    content: '11/21-12/25 主題切片蛋糕，第二件八折 (價低者折/限門市現場購買)',
+                    img: 'img/news/merrychristmas.jpg',
+                    link: 'news.html'
+                  },
+                  {
+                    date: '2024.12.07',
+                    title: '芝士波羅蜜',
+                    content: '軟綿的土司，香濃的芝士鳳梨餡，披上甜蜜的椰香皮，香甜又美味!',
+                    img: 'img/news/cheesebread.jpg',
+                    link: 'news.html'
+                  },
+                  {
+                    date: '2024.12.07',
+                    title: '蕎麥覺醒',
+                    content: '無咖啡因蕎麥飲品，熱量不到400，夜晚飲用也能享受飲品、無負擔!',
+                    img: 'img/news/nocoffeein.jpg',
+                    link: 'news.html'
+                  }
+                ];
+
+              //- JS 的迴圈
+              //- - for (let i = 0; i < newsList.length; i++)
+              //-   .col-md-3
+              //-     +Card(newsList[i])
+
+              //- pug 的迴圈  
+              each item in newsList
+                .swiper-slide.l-news__slide
+                  +Card(item)
+
+      section.--gradient.l-about
+        .container
+          h2.o-section-title.u-mb-80(data-aos="fade-up") ABOUT US
+            span.o-section-title__subtitle 關於我們
+
+        .container.--align-left
+          .row
+            .col-md-7.order-md-0.order-2
+              .l-about__img-mask
+                .l-about__img
+            .col-md-5.order-md-0.order-1
+              .l-about__content-wrap
+                .l-about__content.u-mb-64(data-aos="fade-up")
+                  h3.u-text-2xl.u-mb-16 Why 85°C? 為什麼選擇85°C?
+                  p.u-fw-500 85℃創辦人吳政學，因幼時經常舉家遷徙，獨具洞察生活的敏銳思考，搶先掌握趨勢商機。 2003年初吳政學先生率高階主管共享五星級飯店下午茶，席間皆認同餐點實屬美饌，但價格不斐，頓時萌生「五星級饗宴、平價化體驗」意念，致力打造五星級團隊，多次親訪五星名廚；延攬專業研發團隊，遠赴瓜地馬拉咖啡莊園，嚴選阿拉比卡頂級咖啡豆，逐步開展跨國企業版圖。
+                .l-about__content(data-aos="fade-up")
+                  h3.u-text-2xl.u-mb-16 全世界的85℃ 全球化擴點經營
+                  p.u-fw-500 85℃以咖啡蛋糕與烘培經典組合，深耕全台都會商圈與鄉間小鎮。 堅持物超所值的初衷，分享精緻蛋糕與美味烘培，搭配健康時尚飲品。全球專業烘焙師傅已超過3500位，致力品質提升與產品多樣性，以Think Globally, Act Locally 的用心，從台灣跨越大陸、美國、香港與柬埔寨等地區，躍升國際化品牌新貌，與世人分享85°C幸福時尚。
+                .u-mt-64
+                  //- +Btn({
+                  //-   href: 'about.html',
+                  //-   align: 'right'
+                  //- }) MORE
+    include layouts/_Footer.pug
+
+    //- 公共 scripts
+    include layouts/_Scripts.pug
+    //- 案需引入
+    script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+    script.
+      const swiper = new Swiper('.l-hero__swiper', {
+        effect: 'fade',
+        // 緩慢施放比例，拖一點點就可以換張
+        longSwipesRatio: 0.1,
+        loop: true,
+        // 類似 duration
+        speed: 1200,
+        autoplay: {
+          delay: 3000,
+          // 手動換張時，不停止自動輪播
+          disableOnInteraction: false
+        }
+      });
+
+      const newsSwiper = new Swiper('.l-news__swiper', {
+        longSwipesRatio: 0.1,
+        loop: true,
+        speed: 1200,
+        // 最後的斷點
+        slidesPerView: 'auto',
+        spaceBetween: 12,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+        },
+        breakpoints: {
+          1400: {
+            slidesPerView: 4,
+            spaceBetween: 32,
+            centeredSlides: false,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+            centeredSlides: false,
+          },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+            centeredSlides: false,
+          }
+        },
+        navigation: {
+          prevEl: '.l-news__swiper-btn.--prev',
+          nextEl: '.l-news__swiper-btn.--next',
+        },
+      });

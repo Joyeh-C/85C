@@ -1,0 +1,58 @@
+header.l-header
+  a.l-header__img-mask(href=baseUrl) 
+    img(src=`${baseUrl}/img/logo/logo2.png`, alt="85DegreeC logo")
+    
+  //- input#nav-switcher(type="checkbox" hidden)
+
+  //- label.o-burger.l-header__burger(for="nav-switcher")
+  //-   .o-burger__wrap
+  //-     .o-burger__line
+  //-     .o-burger__line
+  //-     .o-burger__line
+
+  label.o-burger.l-header__burger(onclick="toggleNav()")
+    .o-burger__wrap
+      .o-burger__line
+      .o-burger__line
+      .o-burger__line
+
+  //- c-nav 手機版單純控制開關
+  //- data-lenis-prevent 讓 overflow: auto 滾軸可以正常使用
+  //- 不受 lenis 影響
+  nav.c-nav(data-lenis-prevent)
+    //- .c-nav__menu 手機版控制內容
+    .c-nav__menu
+      //- box > wrap
+      //- list > item
+      ul.c-nav__btn-box.--menu
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href="news.html")
+            span.u-ff-en.u-text-lg NEWS
+            span 最新消息
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href="products.html")
+            span.u-ff-en.u-text-lg PRODUCTS
+            span 商品專區
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href="stores.html")
+            span.u-ff-en.u-text-lg STORES
+            span 門市據點
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href="about.html")
+            span.u-ff-en.u-text-lg ABOUT US
+            span 品牌介紹
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href="map.html")
+            span.u-ff-en.u-text-lg FRANCHISE
+            span 加盟專區
+
+      ul.c-nav__btn-box.--icon
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href="##" target="_blank")
+            iconify-icon.u-icon-md(icon="devicon-plain:facebook")
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href="##" target="_blank")
+            iconify-icon.u-icon-md(icon="streamline:instagram-solid")
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href="##" target="_blank")
+            iconify-icon.u-icon-md(icon="bi:youtube")

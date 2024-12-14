@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    include layouts/_Settings.pug
+    -
+      path = 'stores.html';
+      pageTitle = '加盟專區';
+      infoTitle = '加盟專區後面的資訊標題';
+      description = '加盟專區的網頁描述';
+    include layouts/_Head.pug
+  body
+    include layouts/_Header.pug
+ 
+    section
+      .container
+        h2.o-section-title.u-mb-80 MAP
+          span.o-section-title__subtitle 地圖導覽
+
+      section.l-map
+        .container
+        h3.u-text-xl.u-fw-900 北部地區 North Stores
+          .l-map__google-mask
+            iframe.l-map__google(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14454.77193553068!2d121.578817!3d25.078393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac630972b93d%3A0x2942bf3ae12b171c!2zMTE05Y-w54Gj5Y-w5YyX5biC5YWn5rmW5Y2A5paH5b636LevMuiZnw!5e0!3m2!1szh-TW!2sus!4v1734176458862!5m2!1szh-TW!2sus" 
+            style="border:0;" 
+            allowfullscreen=""
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+          )
+        
+
+          
+    include layouts/_Footer.pug
+    include layouts/_Scripts.pug
