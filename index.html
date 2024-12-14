@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://127.0.0.1:5500/dist/">
+    <meta property="og:image" content="http://127.0.0.1:5500/dist/img/og/og.jpg">
+    <meta property="og:title" content="（專案實作）85℃|由手中的咖啡、麵包與蛋糕，為您傳遞溫暖、共享人生真味">
+    <meta property="og:description" content="85℃醇香遠播，不論是全家張羅早餐的母親，以咖啡衝刺一天的業務，靠COFFEE TIME充飽電力的上班族，或是下課後來杯清涼冷飲的學生，共享各式人生滋味，成為您前進人生的動能。">
+    <meta name="description" content="85℃醇香遠播，不論是全家張羅早餐的母親，以咖啡衝刺一天的業務，靠COFFEE TIME充飽電力的上班族，或是下課後來杯清涼冷飲的學生，共享各式人生滋味，成為您前進人生的動能。">
+    <link rel="icon" type="image/png" href="favicon/favicon-48x48.png" sizes="48x48">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="85℃">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;900&amp;family=Roboto:wght@700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/dist/css/aos.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/dist/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+    <title>（專案實作）85℃｜由手中的咖啡、麵包與蛋糕，為您傳遞溫暖、共享人生真味</title>
+  </head>
+  <body>
+    <header class="l-header"><a class="l-header__img-mask" href="http://127.0.0.1:5500/dist"> <img src="http://127.0.0.1:5500/dist/img/logo/logo2.png" alt="85DegreeC logo"></a>
+      <label class="o-burger l-header__burger" onclick="toggleNav()">
+        <div class="o-burger__wrap">
+          <div class="o-burger__line"></div>
+          <div class="o-burger__line"></div>
+          <div class="o-burger__line"></div>
+        </div>
+      </label>
+      <nav class="c-nav" data-lenis-prevent>
+        <div class="c-nav__menu">
+          <ul class="c-nav__btn-box --menu">
+            <li class="c-nav__btn-wrap"><a class="c-nav__btn" href="news.html"><span class="u-ff-en u-text-lg">NEWS</span><span>最新消息</span></a></li>
+            <li class="c-nav__btn-wrap"><a class="c-nav__btn" href="products.html"><span class="u-ff-en u-text-lg">PRODUCTS</span><span>商品專區</span></a></li>
+            <li class="c-nav__btn-wrap"><a class="c-nav__btn" href="stores.html"><span class="u-ff-en u-text-lg">STORES</span><span>門市據點</span></a></li>
+            <li class="c-nav__btn-wrap"><a class="c-nav__btn" href="about.html"><span class="u-ff-en u-text-lg">ABOUT US</span><span>品牌介紹</span></a></li>
+            <li class="c-nav__btn-wrap"><a class="c-nav__btn" href="map.html"><span class="u-ff-en u-text-lg">FRANCHISE</span><span>加盟專區</span></a></li>
+          </ul>
+          <ul class="c-nav__btn-box --icon">
+            <li class="c-nav__btn-wrap"><a class="c-nav__btn" href="##" target="_blank">
+                <iconify-icon class="u-icon-md" icon="devicon-plain:facebook"></iconify-icon></a></li>
+            <li class="c-nav__btn-wrap"><a class="c-nav__btn" href="##" target="_blank">
+                <iconify-icon class="u-icon-md" icon="streamline:instagram-solid"></iconify-icon></a></li>
+            <li class="c-nav__btn-wrap"><a class="c-nav__btn" href="##" target="_blank">
+                <iconify-icon class="u-icon-md" icon="bi:youtube"></iconify-icon></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="l-main">
+      <section class="u-p-0 l-hero" data-aos="fade" data-aos-offset="0">
+        <div class="swiper l-hero__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide l-hero__slide">
+              <div class="l-hero__img-mask"> <img class="u-object-fit" src="img/banner/buy-one-get-one-free.jpg" alt="買一送一活動"></div>
+            </div>
+            <div class="swiper-slide l-hero__slide">
+              <div class="l-hero__img-mask"> <img class="u-object-fit" src="img/banner/friday-coffee.jpg" alt="星期五咖啡日"></div>
+            </div>
+            <div class="swiper-slide l-hero__slide">
+              <div class="l-hero__img-mask"> <img class="u-object-fit" src="img/banner/international-coffee.jpg" alt="咖啡界奧斯卡"></div>
+            </div>
+            <div class="swiper-slide l-hero__slide">
+              <div class="l-hero__img-mask"> <img class="u-object-fit" src="img/banner/no-coffin.jpg" alt="蕎麥覺醒"></div>
+            </div>
+            <div class="swiper-slide l-hero__slide">
+              <div class="l-hero__img-mask"> <img class="u-object-fit" src="img/banner/wednesday-coffee.jpg" alt="週三黑糖珍珠奶茶日"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="--gradient l-lineup">
+        <div class="container">
+          <h2 class="o-section-title u-mb-24" data-aos="fade-up">商品專區<span class="o-section-title__subtitle">MANY KINDS OF PRODUCTS</span></h2>
+          <div class="row --gap">
+            <div class="col-md-6 l-lineup__wrap">
+              <article class="c-artist-card  " data-aos="fade-up"><a class="c-artist-card__link" herf="products.html">
+                  <h3 class="u-text-xl u-fw-900">麵包 Breads</h3>
+                  <div class="u-img-ratio c-artist-card__img-mask"><img class="u-object-fit --abs" src="img/lineup/breads-nobg.png" alt="麵包 Breads 去背照"/><img class="u-object-fit --abs" src="img/lineup/breads.jpg" alt="麵包 Breads 形象照"/></div></a></article>
+            </div>
+            <div class="col-md-6 l-lineup__wrap">
+              <article class="c-artist-card  " data-aos="fade-up"><a class="c-artist-card__link" herf="products.html">
+                  <h3 class="u-text-xl u-fw-900">蛋糕 Cakes</h3>
+                  <div class="u-img-ratio c-artist-card__img-mask"><img class="u-object-fit --abs" src="img/lineup/cakes-nobg.png" alt="蛋糕 Cakes 去背照"/><img class="u-object-fit --abs" src="img/lineup/cakes.jpg" alt="蛋糕 Cakes 形象照"/></div></a></article>
+            </div>
+            <div class="col-md-4 l-lineup__wrap">
+              <article class="c-artist-card  " data-aos="fade-up"><a class="c-artist-card__link" herf="products.html">
+                  <h3 class="u-text-xl u-fw-900">飲品 Drinks</h3>
+                  <div class="u-img-ratio c-artist-card__img-mask"><img class="u-object-fit --abs" src="img/lineup/drinks-nobg.png" alt="飲品 Drinks 去背照"/><img class="u-object-fit --abs" src="img/lineup/drinks.jpg" alt="飲品 Drinks 形象照"/></div></a></article>
+            </div>
+            <div class="col-md-4 l-lineup__wrap">
+              <article class="c-artist-card  " data-aos="fade-up"><a class="c-artist-card__link" herf="products.html">
+                  <h3 class="u-text-xl u-fw-900">禮品專區 Souvenirs</h3>
+                  <div class="u-img-ratio c-artist-card__img-mask"><img class="u-object-fit --abs" src="img/lineup/souvenirs-nobg.png" alt="禮品專區 Souvenirs 去背照"/><img class="u-object-fit --abs" src="img/lineup/souvenirs.jpg" alt="禮品專區 Souvenirs 形象照"/></div></a></article>
+            </div>
+            <div class="col-md-4 l-lineup__wrap">
+              <article class="c-artist-card  " data-aos="fade-up"><a class="c-artist-card__link" herf="products.html">
+                  <h3 class="u-text-xl u-fw-900">精選食材 Selected ingredients</h3>
+                  <div class="u-img-ratio c-artist-card__img-mask"><img class="u-object-fit --abs" src="img/lineup/ingredients-nobg.png" alt="精選食材 Selected ingredients 去背照"/><img class="u-object-fit --abs" src="img/lineup/ingredients.jpg" alt="精選食材 Selected ingredients 形象照"/></div></a></article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="u-px-0 l-lineup-2">
+        <div class="u-section-px">
+          <div class="container">
+            <h2 class="o-section-title u-mb-40" data-aos="fade-up">全台門市據點<span class="o-section-title__subtitle">STORES IN TAIWAN</span></h2>
+          </div>
+        </div>
+        <div class="container-fluid u-px-0">
+          <div class="row --no-gap">
+            <div class="col-sm-6">
+              <article class="c-artist-card-2" data-aos="fade-up"><a class="c-artist-card-2__link" href="##">
+                  <h3 class="u-text-xl u-fw-900 c-artist-card-2__title">北部地區 North Stores</h3>
+                  <div class="u-img-ratio c-artist-card-2__img-mask"><img class="u-object-fit --abs" src="img/lineup/store01.jpg" alt="台灣 TAIWAN 形象照"></div></a></article>
+            </div>
+            <div class="col-sm-6">
+              <article class="c-artist-card-2" data-aos="fade-up"><a class="c-artist-card-2__link" href="##">
+                  <h3 class="u-text-xl u-fw-900 c-artist-card-2__title">中部地區 Central Stores</h3>
+                  <div class="u-img-ratio c-artist-card-2__img-mask"><img class="u-object-fit --abs" src="img/lineup/store02.jpg" alt="香港 HONG KONG 形象照"></div></a></article>
+            </div>
+            <div class="col-xl-4 col-sm-6">
+              <article class="c-artist-card-2" data-aos="fade-up"><a class="c-artist-card-2__link" href="##">
+                  <h3 class="u-text-xl u-fw-900 c-artist-card-2__title">南部地區 South Stores</h3>
+                  <div class="u-img-ratio c-artist-card-2__img-mask"><img class="u-object-fit --abs" src="img/lineup/store03.jpg" alt="大陸 CHINA 形象照"></div></a></article>
+            </div>
+            <div class="col-xl-4 col-sm-6">
+              <article class="c-artist-card-2" data-aos="fade-up"><a class="c-artist-card-2__link" href="##">
+                  <h3 class="u-text-xl u-fw-900 c-artist-card-2__title">東部地區 East Stores</h3>
+                  <div class="u-img-ratio c-artist-card-2__img-mask"><img class="u-object-fit --abs" src="img/lineup/store04.jpg" alt="澳洲 AUSTRALIA 形象照"></div></a></article>
+            </div>
+            <div class="col-xl-4 col-sm-6">
+              <article class="c-artist-card-2" data-aos="fade-up"><a class="c-artist-card-2__link" href="##">
+                  <h3 class="u-text-xl u-fw-900 c-artist-card-2__title">離島地區 Outlying Islands Stores</h3>
+                  <div class="u-img-ratio c-artist-card-2__img-mask"><img class="u-object-fit --abs" src="img/lineup/store05.jpg" alt="美國 THE U.S.A. 形象照"></div></a></article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-news" id="news">
+        <button class="l-news__swiper-btn --prev"> 
+          <iconify-icon class="u-icon" icon="fa-solid:arrow-left"></iconify-icon>
+        </button>
+        <button class="l-news__swiper-btn --next"> 
+          <iconify-icon class="u-icon" icon="fa-solid:arrow-right"></iconify-icon>
+        </button>
+        <div class="container">
+          <h2 class="o-section-title --align-center u-mb-40" data-aos="fade-up">最新活動<span class="o-section-title__subtitle">NEWS</span></h2>
+          <div class="swiper l-news__swiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide l-news__slide">
+                <article class="c-card"><span class="u-text-lg c-card__date">2024.10.09</span>
+                  <div class="c-card__wrap"><a class="u-img-ratio c-card__img-mask" href="news.html"><img class="u-object-fit --abs" src="img/news/bitter-lemon.jpg" alt="清爽上市TOP 1！"/></a>
+                    <div class="c-card__body">
+                      <h3 class="u-text-md">清爽上市TOP 1！</h3>
+                      <p class="u-line-clamp-2 c-card__desc">苦瓜檸檬清爽消暑! 苦瓜爆檸茶: 苦瓜去火，檸檬消暑，必喝!</p>
+                      <div class="o-btn --align-right"><a class="o-btn__link" href="news.html" target="_blank"></a></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide l-news__slide">
+                <article class="c-card"><span class="u-text-lg c-card__date">2024.10.10</span>
+                  <div class="c-card__wrap"><a class="u-img-ratio c-card__img-mask" href="news.html"><img class="u-object-fit --abs" src="img/news/merrygift.jpg" alt="耶誕歡樂禮物"/></a>
+                    <div class="c-card__body">
+                      <h3 class="u-text-md">耶誕歡樂禮物</h3>
+                      <p class="u-line-clamp-2 c-card__desc">MERRY CHRISTMAS 耶誕樹、聖誕麋路造型餅乾(奶蛋素)</p>
+                      <div class="o-btn --align-right"><a class="o-btn__link" href="news.html" target="_blank"></a></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide l-news__slide">
+                <article class="c-card"><span class="u-text-lg c-card__date">2024.11.07</span>
+                  <div class="c-card__wrap"><a class="u-img-ratio c-card__img-mask" href="news.html"><img class="u-object-fit --abs" src="img/news/winteronly.jpg" alt="冬季限定"/></a>
+                    <div class="c-card__body">
+                      <h3 class="u-text-md">冬季限定</h3>
+                      <p class="u-line-clamp-2 c-card__desc">黑糖暖心黑糖系列: 黑糖薑茶、黑糖薑汁奶茶、黑糖桂圓紅棗茶、黑糖桂圓紅棗奶茶!</p>
+                      <div class="o-btn --align-right"><a class="o-btn__link" href="news.html" target="_blank"></a></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide l-news__slide">
+                <article class="c-card"><span class="u-text-lg c-card__date">2024.11.21</span>
+                  <div class="c-card__wrap"><a class="u-img-ratio c-card__img-mask" href="news.html"><img class="u-object-fit --abs" src="img/news/merrychristmas.jpg" alt="耶誕嘉年華"/></a>
+                    <div class="c-card__body">
+                      <h3 class="u-text-md">耶誕嘉年華</h3>
+                      <p class="u-line-clamp-2 c-card__desc">11/21-12/25 主題切片蛋糕，第二件八折 (價低者折/限門市現場購買)</p>
+                      <div class="o-btn --align-right"><a class="o-btn__link" href="news.html" target="_blank"></a></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide l-news__slide">
+                <article class="c-card"><span class="u-text-lg c-card__date">2024.12.07</span>
+                  <div class="c-card__wrap"><a class="u-img-ratio c-card__img-mask" href="news.html"><img class="u-object-fit --abs" src="img/news/cheesebread.jpg" alt="芝士波羅蜜"/></a>
+                    <div class="c-card__body">
+                      <h3 class="u-text-md">芝士波羅蜜</h3>
+                      <p class="u-line-clamp-2 c-card__desc">軟綿的土司，香濃的芝士鳳梨餡，披上甜蜜的椰香皮，香甜又美味!</p>
+                      <div class="o-btn --align-right"><a class="o-btn__link" href="news.html" target="_blank"></a></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide l-news__slide">
+                <article class="c-card"><span class="u-text-lg c-card__date">2024.12.07</span>
+                  <div class="c-card__wrap"><a class="u-img-ratio c-card__img-mask" href="news.html"><img class="u-object-fit --abs" src="img/news/nocoffeein.jpg" alt="蕎麥覺醒"/></a>
+                    <div class="c-card__body">
+                      <h3 class="u-text-md">蕎麥覺醒</h3>
+                      <p class="u-line-clamp-2 c-card__desc">無咖啡因蕎麥飲品，熱量不到400，夜晚飲用也能享受飲品、無負擔!</p>
+                      <div class="o-btn --align-right"><a class="o-btn__link" href="news.html" target="_blank"></a></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="--gradient l-about">
+        <div class="container">
+          <h2 class="o-section-title u-mb-80" data-aos="fade-up">ABOUT US<span class="o-section-title__subtitle">關於我們</span></h2>
+        </div>
+        <div class="container --align-left">
+          <div class="row">
+            <div class="col-md-7 order-md-0 order-2">
+              <div class="l-about__img-mask">
+                <div class="l-about__img"></div>
+              </div>
+            </div>
+            <div class="col-md-5 order-md-0 order-1">
+              <div class="l-about__content-wrap">
+                <div class="l-about__content u-mb-64" data-aos="fade-up">
+                  <h3 class="u-text-2xl u-mb-16">Why 85°C? 為什麼選擇85°C?</h3>
+                  <p class="u-fw-500">85℃創辦人吳政學，因幼時經常舉家遷徙，獨具洞察生活的敏銳思考，搶先掌握趨勢商機。 2003年初吳政學先生率高階主管共享五星級飯店下午茶，席間皆認同餐點實屬美饌，但價格不斐，頓時萌生「五星級饗宴、平價化體驗」意念，致力打造五星級團隊，多次親訪五星名廚；延攬專業研發團隊，遠赴瓜地馬拉咖啡莊園，嚴選阿拉比卡頂級咖啡豆，逐步開展跨國企業版圖。</p>
+                </div>
+                <div class="l-about__content" data-aos="fade-up">
+                  <h3 class="u-text-2xl u-mb-16">全世界的85℃ 全球化擴點經營</h3>
+                  <p class="u-fw-500">85℃以咖啡蛋糕與烘培經典組合，深耕全台都會商圈與鄉間小鎮。 堅持物超所值的初衷，分享精緻蛋糕與美味烘培，搭配健康時尚飲品。全球專業烘焙師傅已超過3500位，致力品質提升與產品多樣性，以Think Globally, Act Locally 的用心，從台灣跨越大陸、美國、香港與柬埔寨等地區，躍升國際化品牌新貌，與世人分享85°C幸福時尚。</p>
+                </div>
+                <div class="u-mt-64"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="l-footer">
+      <div class="o-gotop" onclick="lenis.scrollTo(0)">
+        <div class="o-gotop__arrow">
+          <iconify-icon class="u-icon --sm" icon="fa-solid:long-arrow-alt-up"></iconify-icon>
+        </div>
+        <div class="o-gotop__text">TOP</div>
+      </div>
+      <div class="l-footer__menu u-px-0">
+        <ul class="l-footer__btn-box">
+          <li class="l-footer__btn-wrap"><a class="l-footer__btn" href="##"><span class="l-footer__text --en u-ff-en">INFO</span><span class="l-footer__text --zh">相關資訊</span></a></li>
+          <li class="l-footer__btn-wrap"><a class="l-footer__btn" href="##"><span class="l-footer__text --en u-ff-en">NEWS</span><span class="l-footer__text --zh">最新消息</span></a></li>
+          <li class="l-footer__btn-wrap"><a class="l-footer__btn" href="##"><span class="l-footer__text --en u-ff-en">ITEMS</span><span class="l-footer__text --zh">產品目錄</span></a></li>
+          <li class="l-footer__btn-wrap"><a class="l-footer__btn" href="##"><span class="l-footer__text --en u-ff-en">QUESTIONS</span><span class="l-footer__text --zh">相關問題</span></a></li>
+          <li class="l-footer__btn-wrap"><a class="l-footer__btn" href="##"><span class="l-footer__text --en u-ff-en">CONTACT</span><span class="l-footer__text --zh">聯絡我們</span></a></li>
+          <li class="l-footer__btn-wrap"><a class="l-footer__btn" href="map.html"><span class="l-footer__text --en u-ff-en">MAP</span><span class="l-footer__text --zh">地圖導覽</span></a></li>
+        </ul>
+        <ul class="l-footer__link-box u-mt-16 u-mb-16">
+          <li class="l-footer__link-wrap"><a href="https://www.facebook.com//megaportfest/" target="_blank">
+              <iconify-icon class="u-icon" icon="mingcute:facebook-fill"></iconify-icon></a></li>
+          <li class="l-footer__link-wrap"><a href="https://www.instagram.com/megaportfest/" target="_blank">
+              <iconify-icon class="u-icon" icon="mingcute:ins-fill"></iconify-icon></a></li>
+          <li class="l-footer__link-wrap"><a href="https://www.youtube.com/channel/UC7xWU14_GGYKVqoSLg1M8EQ/feed" target="_blank">
+              <iconify-icon class="u-icon" icon="mingcute:youtube-fill"></iconify-icon></a></li>
+        </ul>
+        <div class="u-text-sm">© 2024 Jarvis Course. All rights reserved.</div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="http://127.0.0.1:5500/dist/js/lazyload.min.js"></script>
+    <script src="http://127.0.0.1:5500/dist/js/aos.min.js"></script>
+    <script>
+      AOS.init({
+        // 設定物件頂部距離視窗底部多少才動畫
+        offset: 200,
+        duration: 1200,
+        //- once: true
+      });
+    </script>
+    <script src="http://127.0.0.1:5500/dist/js/main.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.l-hero__swiper', {
+        effect: 'fade',
+        // 緩慢施放比例，拖一點點就可以換張
+        longSwipesRatio: 0.1,
+        loop: true,
+        // 類似 duration
+        speed: 1200,
+        autoplay: {
+          delay: 3000,
+          // 手動換張時，不停止自動輪播
+          disableOnInteraction: false
+        }
+      });
+      
+      const newsSwiper = new Swiper('.l-news__swiper', {
+        longSwipesRatio: 0.1,
+        loop: true,
+        speed: 1200,
+        // 最後的斷點
+        slidesPerView: 'auto',
+        spaceBetween: 12,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+        },
+        breakpoints: {
+          1400: {
+            slidesPerView: 4,
+            spaceBetween: 32,
+            centeredSlides: false,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+            centeredSlides: false,
+          },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+            centeredSlides: false,
+          }
+        },
+        navigation: {
+          prevEl: '.l-news__swiper-btn.--prev',
+          nextEl: '.l-news__swiper-btn.--next',
+        },
+      });
+    </script>
+  </body>
+</html>

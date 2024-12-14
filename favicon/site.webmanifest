@@ -1,0 +1,21 @@
+{
+  "name": "85℃咖啡蛋糕烘焙專賣店",
+  "short_name": "85℃",
+  "icons": [
+    {
+      "src": "/85℃咖啡蛋糕烘焙專賣店/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/85℃咖啡蛋糕烘焙專賣店/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#e0aeae",
+  "display": "standalone"
+}
